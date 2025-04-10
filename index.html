@@ -1,0 +1,140 @@
+<!DOCTYPE .html>
+<html>
+<head>
+	<title>Q4Homework#1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		div {
+			width: 800px;
+		}
+		.form control {
+			background-color: D6D2D2;
+			font-family: Consolas;
+			font-size: 62px;
+			text-align: center;
+			font-weight: bold;
+			border: 1px dashed gray;
+		}
+		kbd {
+			font-family: Consolas;
+			font-size: 41px;
+			margin-bottom: 32px;
+			display: inline-block;
+			width: 380px;
+		}
+		#min, #max {
+			width: 250px;
+			text-align: center;
+		}
+		button {
+			margin-bottom: 5px;
+		}
+		h2 {
+			font-family: Consolas;
+			font-weight: bolder;
+			background-color: 5FBFF9;
+			width: 780px;
+		}
+
+	</style>
+</head>
+<body>
+<br>
+<center>
+	<div id="sample" >
+		<h2>Math Methods</h2>
+		<br>
+		<details ontoggle="message1()">
+			<summary>
+				<u>Instructions</u>
+				<br>
+				<i id="message"></i>
+			</summary>
+		</details>
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">
+				<input type="number" class="form-control" id="num1">
+			</div>
+			<div class="ol-md-6"> 
+				<input type="number" class="form-control" id="num2">
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">
+				<kbd id="result1">Output 1</kbd>
+			</div>
+
+				<div class="row">
+			<div class="col-md-6">
+				<kbd id="result2">Output 2</kbd>
+			</div>
+			<br>
+			<div class="d-grid">
+				<button type="button" class="btn btn-success" onclick="PowResult()">Power up!</button>
+
+				<button type="button" class="btn btn-success" onclick="SqrtResult()">Get the square root</button>
+
+			    <button type="button" class="btn btn-sucess" onclick="MinMacResult()">Get the lowest number (5,10,-2)</button>
+
+				<button type="button" class="btn btn-sucess" onclick="MinMacResult()">Get the highest number (5,10,-2)</button>
+
+				<button type="button" class="btn btn-sucess" onclick="RndmResult()">Enter 10 and 100 respectively to display random numbers</button>
+
+			</div>
+
+		</div>
+
+		<br>
+	</div>
+</div>
+</center>
+
+
+<script>
+	function message1 (){
+		document.getElementById("message").innerHTML="Input two numbers then click the buttons below."
+	}
+	
+	function RndResult () {
+		var num1 = document.getElementById ("num1").value;
+		var num2 = document.getElementById ("num2").value;
+
+		document.getElementById("result1").innerHTML = Math.round(num1);
+		document.getElementById("result2").innerHTML = Math.round(num2);
+	}
+	function PowResult () {
+	    var num1 = document.getElementById ("num1").value;
+		var num2 = document.getElementById ("num2").value;
+
+		document.getElementById("result1").innerHTML = ;
+		document.getElementById("result2").innerHTML = ;
+	}
+	function SqrtResult () {
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+
+		document.getElementById("result1").innerHTML = ;
+		document.getElementById("result2").innerHTML = ;
+	}
+	function MinMaxResult() {
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+
+		document.getElementById("result1").innerHTML = ;
+		document.getElementById("result2").innerHTML = ;
+
+	}
+	function RndResult () {
+       var num1 = document.getElementById("num1").value;
+       var num2 = document.getElementById("num2").value;
+
+		document.getElementById("result1").innerHTML = ;
+		document.getElementById("result2").innerHTML = ;
+	}
+</script>
+	
